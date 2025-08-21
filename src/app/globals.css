@@ -1,26 +1,44 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-financeBlue: #0973dc;
+  --color-financeGreen: #28bd66;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+html, body{overflow-x: hidden;background-color: #F8FBFD;}
+
+.animated-border {
+  position: relative;
+  z-index: 1;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.talk
+{
+  border:10px solid black;
+  border-radius:5px;
+    border-image: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'> <style> rect{animation:stroke 5s infinite linear;} @keyframes stroke{to{stroke-dashoffset:776;}} </style> <linearGradient id='g' x1='0%' y1='0%' x2='0%' y2='100%'> <stop offset='0%' stop-color='%230973dc'/> <stop offset='25%' stop-color='%232d3561'/> <stop offset='50%' stop-color='%2328bd66'/> <stop offset='100%' stop-color='%23ffb961'/> </linearGradient> <rect x='1.5' y='1.5' width='97' height='97' rx='5' ry='5' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388' fill='none'/> </svg>") 5;
+  
 }
+
+.animated-gradient-text {
+  background: linear-gradient(270deg, #f4d868, #94fabf, #feeead); 
+  background-size: 200% 200%; 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
