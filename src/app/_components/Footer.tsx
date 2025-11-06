@@ -40,7 +40,7 @@ function Footer() {
       {/* Bottom Row */}
       <div className="border-t border-gray-700 py-4">
         <p className="text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} All Rights Reserved.
+          © {new Date().getFullYear()} All Rights Reserved. loanvit
         </p>
       </div>
     </footer>

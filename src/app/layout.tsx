@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TheLoanWise",
-  description: "The Loan Wise",
+  title: "Loan Vit",
+  description: "Welcome to loanvit",
 };
 
 export default function RootLayout({

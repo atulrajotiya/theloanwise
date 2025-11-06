@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <h2 className='text-2xl flex justify-center items-center'><FaBuffer className='text-financeGreen'/>&nbsp;<span className='font-semibold text-gray-800'>theloanwise</span><span className='text-financeBlue'>.com</span></h2>
+          <h2 className='text-2xl flex justify-center items-center'><FaBuffer className='text-financeGreen'/>&nbsp;<span className='font-semibold text-gray-800'>loanvit</span><span className='text-financeBlue'>.com</span></h2>
         </Link>
 
         {/* Desktop Menu */}
@@ -30,7 +30,7 @@ export default function Navbar() {
           {
             links.map((link,index) => (
               <>
-                <li><Link href={link.href} key={index} className={`${pathName === link.href ? "text-financeBlue font-bold underline" : "text-gray-800"} hover:underline ease-in-out duration-150`}>{link.label}</Link></li>
+                <li key={index}><Link href={link.href}  className={`${pathName === link.href ? "text-financeBlue font-bold underline" : "text-gray-800"} hover:underline ease-in-out duration-150`}>{link.label}</Link></li>
               </>
             ))
           }
