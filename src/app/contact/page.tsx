@@ -154,15 +154,15 @@ function Contact() {
           <ul className="space-y-6">
             <li className="flex items-center gap-4">
               <FaMapMarkerAlt className="text-yellow-300 text-3xl bg-white/30 p-2 rounded-md" />
-              <span>[Your Address Here, City, State, PIN, India]</span>
+              <span>6/49, sector 49, faridabad, Haryana , 121001</span>
             </li>
             <li className="flex items-center gap-4">
               <FaPhoneAlt className="text-yellow-300 text-3xl bg-white/30 p-2 rounded-md" />
-              <a href="tel:+919999999999" className="hover:underline">+91 99999 99999</a>
+              <a href="tel:+918920161638" className="hover:underline">+91 8920161638</a>
             </li>
             <li className="flex items-center gap-4">
               <FaEnvelope className="text-yellow-300 text-3xl bg-white/30 p-2 rounded-md" />
-              <a href="mailto:info@theloanwise.com" className="hover:underline">info@theloanwise.com</a>
+              <a href="mailto:info@loanvit.com" className="hover:underline">info@loanvit.com</a>
             </li>
           </ul>
         </div>
